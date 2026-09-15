@@ -25,7 +25,17 @@ public record TripPlanResponse(
             String description,
             Double lat,
             Double lng,
-            Integer stayMinutes
+            Integer stayMinutes,
+            NaverPlaceResponse naverPlace
+    ) {
+    }
+
+    public record NaverPlaceResponse(
+            String category,
+            String address,
+            String roadAddress,
+            String telephone,
+            String link
     ) {
     }
 }
