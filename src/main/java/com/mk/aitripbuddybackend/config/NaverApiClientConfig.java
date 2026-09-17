@@ -6,7 +6,6 @@ import org.springframework.web.client.RestClient;
 
 @Configuration
 public class NaverApiClientConfig {
-
     @Bean
     public RestClient restClient() {
         return RestClient.builder().build();
